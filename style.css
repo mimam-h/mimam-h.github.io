@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* CSS Reset Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* General Styles */
+
+p,
+li,
+a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+}
+
+/* Navigation Styles */
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4c88ff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1em 2em;
+  height: 60px;
+  position: sticky;
+  top: 0;
+}
+
+nav .nav-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 700;
+  height: 100%;
+  position: sticky;
+  top: 0;
+}
+
+.nav-brand a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-brand a:hover {
+  color: #1f2d57;
+}
+
+.nav-brand a:active {
+  color: #6fe0e7;
+}
+
+nav .nav-list {
+  display: flex;
+  flex: 2;
+  align-items: center;
+  justify-content: end;
+  flex-flow: row wrap;
+  height: 100%;
+}
+
+nav .nav-list .nav-menu {
+  margin: 0 1em;
+  font-size: 1em;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  height: 100%;
+}
+
+.nav-menu a:link {
+  text-decoration: none;
+}
+
+.nav-menu a:visited {
+  color: #1f2d57;
+}
+
+.nav-menu a:hover {
+  color: #1f2d57;
+  text-decoration: underline;
+}
+
+.nav-menu a:active {
+  background-color: #1f2d57;
+  color: white;
+}
