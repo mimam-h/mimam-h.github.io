@@ -37,10 +37,12 @@ h6 {
 header {
   position: sticky;
   top: 0;
+  width: 100%;
 }
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: #4c88ff;
@@ -116,3 +118,26 @@ nav .nav-list .nav-menu {
   background-color: #1f2d57;
   color: white;
 }
+
+/* Main Styles */
+
+/* section {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+} */
