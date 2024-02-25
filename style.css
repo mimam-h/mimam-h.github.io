@@ -21,6 +21,7 @@ li,
 a {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
+  color: white;
 }
 
 h1,
@@ -30,7 +31,7 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", sans-serif;
-  color: #333;
+  color: white;
 }
 
 /* Navigation Styles */
@@ -44,19 +45,15 @@ header {
 
 nav {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   background: transparent;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 0.5em 2em;
   height: 60px;
+  font-size: 1.25em;
 }
 
 nav a {
-  /* color: white; */
-  color: black;
   text-decoration: none;
-  font-size: 1.25em;
 }
 
 nav .nav-brand {
@@ -72,50 +69,51 @@ nav .brand {
 
 nav .nav-list {
   display: flex;
-  flex: 2;
   align-items: center;
   justify-content: end;
   flex-flow: row wrap;
+  flex: 2;
   height: 100%;
 }
 
 nav .nav-list .nav-menu {
   font-weight: 500;
   height: 100%;
+  padding: 0 0.5em;
   display: flex;
   align-items: center;
-  padding: 0 0.5em;
-}
-
-.nav-menu:link {
-  text-decoration: none;
-}
-
-.nav-menu:visited {
-  color: #6fe0e7;
 }
 
 .nav-menu:hover {
-  color: #6fe0e7;
-  text-decoration: underline;
+  background-color: #6fe0e7;
 }
 
-.nav-menu:active {
-  background-color: #1f2d57;
+.nav-menu a:link {
+  text-decoration: none;
+}
+
+.nav-menu a:visited {
+  color: #6fe0e7;
+}
+
+.nav-menu a:hover {
+  color: #1f2d57;
+}
+
+.nav-menu a:active {
   color: white;
   text-decoration: none;
 }
 
 /* Main Styles */
 
-/* section {
+section {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: rgba(31, 45, 87, 1);
-  color: white;
-} */
+}
 
 /* .wrapper {
   width: 60%;
