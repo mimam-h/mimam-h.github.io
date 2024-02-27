@@ -115,17 +115,19 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 65px 20% 0;
 }
 
-/* .wrapper {
-  width: 60%;
-  height: 75%;
+.wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: nowrap;
-} */
+  justify-content: center;
+  max-width: 1024px;
+  height: 100%;
+  padding: 65px 0;
+}
+
+/* = About Styles = */
 
 .image-container {
   height: fit-content;
@@ -133,6 +135,7 @@ section {
 
 .my-photo {
   border-radius: 50%;
+  max-width: 300px;
 }
 
 .profile-info {
@@ -172,7 +175,7 @@ section {
   color: #6fe0e7;
 }
 
-/* Experience Styles */
+/* = Experience Styles = */
 
 .article-list {
   margin: 1.5em 0 0;
@@ -223,6 +226,30 @@ article .article-text {
 .article-text p {
   color: black;
 }
+
+/* = Technologies Styles = */
+
+section#technologies {
+  height: 50vh;
+}
+
+.tech-list {
+  margin: 1.5em 0 0;
+  display: flex;
+  flex-flow: row wrap;
+  max-height: 90% ;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.tech-list .tech-item {
+  background-color: white;
+}
+
+.tech-list .tech-logo {
+  max-height: 150px;
+}
+
 
 /* Responsive Style */
 
