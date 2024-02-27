@@ -110,12 +110,12 @@ nav .nav-list .nav-menu {
 
 section {
   height: 100vh;
-  background: rgb(31, 45, 87, 1);
+  background: #1f2d57;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 25%;
+  padding: 65px 20% 0;
 }
 
 /* .wrapper {
@@ -131,11 +131,11 @@ section {
   height: fit-content;
 }
 
-.image-container img {
+.my-photo {
   border-radius: 50%;
 }
 
-.profile-info{
+.profile-info {
   max-width: 1024px;
 }
 
@@ -163,13 +163,65 @@ section {
 .fa-brands,
 .fa-solid {
   font-size: 1.5em;
-  color: #4c88ff;
+  color: white;
   cursor: default;
 }
 
 .fa-brands:hover,
 .fa-solid:hover {
-  color: white;
+  color: #6fe0e7;
+}
+
+/* Experience Styles */
+
+.article-list {
+  margin: 1.5em 0 0;
+  max-width: 100%;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  overflow-y: auto;
+}
+
+.article-list article {
+  max-width: 100%;
+}
+
+article .article-wrapper {
+  border: white 2px solid;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+article .article-image-wrapper {
+  background-color: white;
+  height: 150px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-image-wrapper img {
+  max-height: 100%;
+  max-width: 100%;
+  padding: 0.25em;
+  object-fit: contain;
+}
+
+article .article-text {
+  background-color: #4c88ff;
+  padding: 1em 1.25em;
+  max-height: 75%;
+  max-width: 100%;
+  overflow-y: auto; 
+}
+
+.article-text h3,
+.article-text p {
+  color: black;
 }
 
 /* Responsive Style */
