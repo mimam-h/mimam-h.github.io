@@ -18,21 +18,26 @@
         </div>
         <ul class="nav-list">
           <li class="nav-menu">
-            <a href="#about">Home</a>
+            <a class="nav-link td-none" href="#about">Home</a>
           </li>
           <li class="nav-menu">
-            <a href="#experience">Experience</a>
+            <a class="nav-link td-none" href="#experience">Experience</a>
           </li>
           <li class="nav-menu">
-            <a href="#technologies">Tech Stack</a>
+            <a class="nav-link td-none" href="#technologies">Tech Stack</a>
           </li>
           <li class="nav-menu">
-            <a href="#project">Project</a>
+            <a class="nav-link td-none" href="#projects">Project</a>
           </li>
           <li class="nav-menu">
-            <a href="#contact">Contact</a>
+            <a class="nav-link td-none" href="#contact">Contact</a>
           </li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
     <main>
@@ -48,7 +53,7 @@
           <div class="profile-info">
             <div class="profile-description">
               <p>Hello everyone,</p>
-              <h1 class="my-name">Muhammad Imam Hidayat</h1>
+              <h1 class="my-name text-gradient">Muhammad Imam Hidayat</h1>
               <p>Software Engineer | Backend Developer</p>
               <p>
                 An aspiring software engineer who is passionate about developing
@@ -181,6 +186,13 @@
             <li class="tech-item">
               <img
                 class="tech-logo"
+                src="assets/logo-javascript.svg"
+                alt="Java"
+              />
+            </li>
+            <li class="tech-item">
+              <img
+                class="tech-logo"
                 src="assets/logo-nodejs.svg"
                 alt="NodeJs"
               />
@@ -215,13 +227,95 @@
           </ul>
         </div>
       </section>
-      <section id="project">
-        <h2 class="section-tile">Project</h2>
+      <section id="projects">
+        <div class="wrapper">
+          <h2 class="section-title">Project</h2>
+          <div class="card-list">
+            <div class="card">
+              <div class="card-content-wrapper">
+                <div class="project-image-container">
+                  <img src="assets/project-dlwa.png" alt="" />
+                </div>
+                <div class="project-description-container">
+                  <h3 class="project-name">Dewi Laundry Web App</h3>
+                  <p class="project-description">
+                    Dewi Laundry Web App is a web application developed for
+                    customers and managers of Dewi Laundry to manage existing
+                    laundry transactions.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content-wrapper">
+                <div class="project-image-container">
+                  <img src="assets/project-bangkit.png" alt="" />
+                </div>
+                <div class="project-description-container">
+                  <h3 class="project-name">Tips n Trip</h3>
+                  <p class="project-description">
+                    Tips n Trip is a mobile application developed to help
+                    tourists planning their vacation and iternary based on their
+                    destination, budget, and vacation duration with the help of
+                    Cloud and Machine Learning.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="contact">
-        <h2 class="section-tile">Contact Me!</h2>
+        <div class="wrapper">
+          <h2 class="section-title">Contact Me!</h2>
+          <div class="contact-box">
+            <div class="contact-invitation">
+              <p>
+                I'm very open to any kind of collaboration. If you have any
+                questions or just want to get in touch with me, you can contact
+                me through the following social media or email. I'll be waiting!
+              </p>
+            </div>
+            <div class="contact-info">
+              <div class="contact">
+                <div class="contact-icon-container">
+                  <a
+                    class="contact-item-anchor"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/mh-imam/"
+                    ><i class="fa-brands fa-linkedin co-icon"></i
+                  ></a>
+                </div>
+                <div class="contact-label">
+                  <p class="contact-label-name">Linkedin</p>
+                  <p class="contact-description">Muhammad Imam Hidayat</p>
+                </div>
+              </div>
+              <div class="contact">
+                <div class="contact-icon-container">
+                  <a
+                    class="contact-item-anchor"
+                    target="_blank"
+                    href="mailto:imamhidayat24@gmail.com"
+                    ><i class="fa-solid fa-envelope co-icon"></i
+                  ></a>
+                </div>
+                <div class="contact-label">
+                  <p class="contact-label-name">Email</p>
+                  <p class="contact-description">imamhidayat24@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-container">
+        <p class="justify">&copy; 2023 Muhammad Imam Hidayat</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
