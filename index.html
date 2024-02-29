@@ -10,39 +10,63 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <header>
-      <nav>
-        <div class="nav-brand">
-          <a class="brand" href="#">mam.</a>
+  <body class="bg-blue-950">
+    <header class="fixed top-0 z-1">
+      <nav class="bg-black flex flex-row justify-between">
+        <div class="nav-brand flex flex-col items-center">
+          <a
+            class="brand font-anta font-bold text-white no-underline text-xl"
+            href="#"
+            >mam.</a
+          >
         </div>
-        <ul class="nav-list">
-          <li class="nav-menu">
-            <a class="nav-link td-none" href="#about">Home</a>
+        <ul class="nav-list list-none flex flex-row justify-end items-center">
+          <li class="nav-menu text-center">
+            <a
+              class="nav-link no-underline font-roboto text-white font-medium text-xl"
+              href="#about"
+              >Home</a
+            >
           </li>
-          <li class="nav-menu">
-            <a class="nav-link td-none" href="#experience">Experience</a>
+          <li class="nav-menu text-center">
+            <a
+              class="nav-link no-underline font-roboto text-white font-medium text-xl"
+              href="#experience"
+              >Experience</a
+            >
           </li>
-          <li class="nav-menu">
-            <a class="nav-link td-none" href="#technologies">Tech Stack</a>
+          <li class="nav-menu text-center">
+            <a
+              class="nav-link no-underline font-roboto text-white font-medium text-xl"
+              href="#technologies"
+              >Tech Stack</a
+            >
           </li>
-          <li class="nav-menu">
-            <a class="nav-link td-none" href="#projects">Project</a>
+          <li class="nav-menu text-center">
+            <a
+              class="nav-link no-underline font-roboto text-white font-medium text-xl"
+              href="#projects"
+              >Project</a
+            >
           </li>
-          <li class="nav-menu">
-            <a class="nav-link td-none" href="#contact">Contact</a>
+          <li class="nav-menu text-center">
+            <a
+              class="nav-link no-underline font-roboto text-white font-medium text-xl"
+              href="#contact"
+              >Contact</a
+            >
           </li>
         </ul>
         <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+          <span class="bar block bg-white"></span>
+          <span class="bar block bg-white"></span>
+          <span class="bar block bg-white"></span>
         </div>
       </nav>
     </header>
     <main>
-      <section id="about">
-        <div class="wrapper">
+      <section class="flex flex-col justify-center items-center" id="about">
+        <div class="wrapper flex flex-col justify-center items-center">
           <aside class="image-container">
             <img
               src="assets/my-photo-1000w.jpg"
@@ -50,60 +74,81 @@
               alt="My Photo"
             />
           </aside>
-          <div class="profile-info">
-            <div class="profile-description">
-              <p>Hello everyone,</p>
-              <h1 class="my-name text-gradient">Muhammad Imam Hidayat</h1>
-              <p>Software Engineer | Backend Developer</p>
-              <p>
+          <div class="profile-info flex flex-col items-center">
+            <div class="profile-description flex flex-col items-center">
+              <p class="font-roboto text-white text-lg">Hello everyone,</p>
+              <h1
+                class="my-name text-gradient font-montserrat text-white text-4xl text-center"
+              >
+                Muhammad Imam Hidayat
+              </h1>
+              <p class="font-roboto text-white text-xl">
+                Software Engineer | Backend Developer
+              </p>
+              <p
+                class="text-center font-roboto text-white leading-relaxed text-lg"
+              >
                 An aspiring software engineer who is passionate about developing
                 web applications that can be useful and solve real problems. I
                 am also currently learning IT Security dan Operations in order
                 to develop and deploy high-quality software.
               </p>
             </div>
-            <ul class="social-media-list">
+            <ul class="social-media-list list-none flex flex-row">
               <li class="social-media-item">
                 <a
-                  class="social-media-item-anchor"
+                  class="social-media-item-anchor font-roboto"
                   target="_blank"
                   href="https://github.com/mimam-h"
-                  ><i class="fa-brands fa-github"></i
+                  ><i class="fa-brands fa-github text-white text-2xl"></i
                 ></a>
               </li>
               <li class="social-media-item">
                 <a
-                  class="social-media-item-anchor"
+                  class="social-media-item-anchor font-roboto"
                   target="_blank"
                   href="https://www.linkedin.com/in/mh-imam/"
-                  ><i class="fa-brands fa-linkedin"></i
+                  ><i class="fa-brands fa-linkedin text-white text-2xl"></i
                 ></a>
               </li>
               <li class="social-media-item">
                 <a
-                  class="social-media-item-anchor"
+                  class="social-media-item-anchor font-roboto"
                   target="_blank"
                   href="mailto:imamhidayat24@gmail.com"
-                  ><i class="fa-solid fa-envelope"></i
+                  ><i class="fa-solid fa-envelope text-white text-2xl"></i
                 ></a>
               </li>
             </ul>
           </div>
         </div>
       </section>
-      <section id="experience">
-        <div class="wrapper">
-          <h2 class="section-title">Experience</h2>
-          <div class="article-list">
+      <section
+        class="flex flex-col justify-center items-center"
+        id="experience"
+      >
+        <div class="wrapper flex flex-col justify-center items-center">
+          <h2 class="section-title bg-secondary text-white font-montserrat text-2xl px-6 py-6">
+            Experience
+          </h2>
+          <div class="article-list flex flex-col items-center overflow-y-auto">
             <article>
-              <div class="article-wrapper">
-                <div class="article-image-wrapper">
+              <div class="article-wrapper overflow-hidden">
+                <div
+                  class="article-image-wrapper bg-white flex flex-col justify-center items-center"
+                >
                   <img src="assets/poros.png" alt="POROS logo" />
                 </div>
-                <div class="article-text">
-                  <h3>POROS Organization of Open Source</h3>
-                  <p>[Mar 2021] - [Dec 2023]</p>
-                  <p>
+                <div class="article-text bg-secondary">
+                  <h3 class="font-montserrat text-black text-xl">
+                    POROS Organization of Open Source
+                  </h3>
+                  <p class="font-roboto text-black leading-normal text-lg">
+                    [Mar 2021] - [Dec 2023]
+                  </p>
+                  <p
+                    class="text-justify font-roboto text-black leading-normal text-lg"
+                  >
                     During that time, I learned Linux, open source, software
                     development, IT Operation, and Cybersecurity. I was
                     responsible for planning and conducting the POROS Gathering
@@ -119,17 +164,23 @@
               </div>
             </article>
             <article>
-              <div class="article-wrapper">
-                <div class="article-image-wrapper">
+              <div class="article-wrapper overflow-hidden">
+                <div
+                  class="article-image-wrapper bg-white flex flex-col justify-center items-center"
+                >
                   <img src="assets/filkom.png" alt="FILKOM logo" />
                 </div>
-                <div class="article-text">
-                  <h3>
+                <div class="article-text bg-secondary">
+                  <h3 class="font-montserrat text-black text-xl">
                     Practical Work Assistant of System Analysis and Design
                     Course
                   </h3>
-                  <p>[Feb 2023] - [Jun 2023]</p>
-                  <p>
+                  <p class="font-roboto text-black text-lg">
+                    [Feb 2023] - [Jun 2023]
+                  </p>
+                  <p
+                    class="text-justify font-roboto text-black leading-relaxed text-lg"
+                  >
                     I assisted 40 students to understand the analysis and design
                     stages of software engineering with an object-oriented
                     approach through weekly practical work sessions, discussing
@@ -141,14 +192,20 @@
               </div>
             </article>
             <article>
-              <div class="article-wrapper">
-                <div class="article-image-wrapper">
+              <div class="article-wrapper overflow-hidden">
+                <div
+                  class="article-image-wrapper bg-white flex flex-col justify-center items-center"
+                >
                   <img src="assets/hology.png" alt="HOLOGY 5.0 logo" />
                 </div>
-                <div class="article-text">
-                  <h3>Staff of Equipment Division at HOLOGY 5.0</h3>
-                  <p>[Jun 2022] - [Dec 2022]</p>
-                  <p>
+                <div class="article-text bg-secondary">
+                  <h3 class="font-montserrat text-black text-xl">
+                    Staff of Equipment Division at HOLOGY 5.0
+                  </h3>
+                  <p class="font-roboto text-black text-lg">
+                    [Jun 2022] - [Dec 2022]
+                  </p>
+                  <p class="font-roboto text-black leading-relaxed text-lg">
                     I was responsible for preparing all equipment and decoration
                     needs in the Grand Seminar, Academy, Competition, and
                     Awarding Night events organized by HOLOGY 5.0 as a team. One
@@ -163,10 +220,15 @@
           </div>
         </div>
       </section>
-      <section id="technologies">
-        <div class="wrapper">
-          <h2 class="section-title">Tech Stack</h2>
-          <ul class="tech-list">
+      <section
+        class="flex flex-col justify-center items-center"
+        id="technologies"
+      >
+        <div class="wrapper flex flex-col justify-center items-center">
+          <h2 class="section-title bg-secondary font-montserrat text-white text-2xl px-6 py-6">
+            Tech Stack
+          </h2>
+          <ul class="tech-list list-none flex flex-row justify-center">
             <li class="tech-item">
               <img class="tech-logo" src="assets/logo-git.svg" alt="Git" />
             </li>
@@ -227,18 +289,24 @@
           </ul>
         </div>
       </section>
-      <section id="projects">
-        <div class="wrapper">
-          <h2 class="section-title">Project</h2>
-          <div class="card-list">
+      <section class="flex flex-col justify-center items-center" id="projects">
+        <div class="wrapper flex flex-col justify-center items-center">
+          <h2 class="section-title bg-secondary font-montserrat text-white text-2xl px-6 py-6">
+            Project
+          </h2>
+          <div class="card-list flex flex-row justify-center items-center">
             <div class="card">
-              <div class="card-content-wrapper">
+              <div class="card-content-wrapper flex-col bg-secondary">
                 <div class="project-image-container">
-                  <img src="assets/project-dlwa.png" alt="" />
+                  <img src="assets/project-dlwa.png" alt="Dewi Laundry Web App Snapshot" />
                 </div>
                 <div class="project-description-container">
-                  <h3 class="project-name">Dewi Laundry Web App</h3>
-                  <p class="project-description">
+                  <h3 class="project-name font-montserrat text-black text-xl">
+                    Dewi Laundry Web App
+                  </h3>
+                  <p
+                    class="project-description text-justify font-roboto text-black leading-relaxed text-lg"
+                  >
                     Dewi Laundry Web App is a web application developed for
                     customers and managers of Dewi Laundry to manage existing
                     laundry transactions.
@@ -247,15 +315,19 @@
               </div>
             </div>
             <div class="card">
-              <div class="card-content-wrapper">
+              <div class="card-content-wrapper flex-col bg-secondary">
                 <div class="project-image-container">
-                  <img src="assets/project-bangkit.png" alt="" />
+                  <img src="assets/project-bangkit.png" alt="Tips n Trip Project" />
                 </div>
                 <div class="project-description-container">
-                  <h3 class="project-name">Tips n Trip</h3>
-                  <p class="project-description">
+                  <h3 class="project-name font-montserrat text-black text-xl">
+                    Tips n Trip
+                  </h3>
+                  <p
+                    class="project-description text-justify font-roboto text-black leading-relaxed text-lg"
+                  >
                     Tips n Trip is a mobile application developed to help
-                    tourists planning their vacation and iternary based on their
+                    tourists planning their vacation and itinerary based on their
                     destination, budget, and vacation duration with the help of
                     Cloud and Machine Learning.
                   </p>
@@ -265,44 +337,62 @@
           </div>
         </div>
       </section>
-      <section id="contact">
-        <div class="wrapper">
-          <h2 class="section-title">Contact Me!</h2>
-          <div class="contact-box">
+      <section class="flex justify-center items-center" id="contact">
+        <div class="wrapper flex flex-col justify-center items-center">
+          <h2 class="section-title bg-secondary font-montserrat text-white text-2xl px-6 py-6">
+            Contact Me!
+          </h2>
+          <div class="contact-box flex flex-row">
             <div class="contact-invitation">
-              <p>
+              <p class="text-justify font-roboto text-white leading-relaxed text-lg">
                 I'm very open to any kind of collaboration. If you have any
                 questions or just want to get in touch with me, you can contact
                 me through the following social media or email. I'll be waiting!
               </p>
             </div>
-            <div class="contact-info">
-              <div class="contact">
-                <div class="contact-icon-container">
+            <div class="contact-info flex flex-col">
+              <div class="contact flex flex-row">
+                <div
+                  class="contact-icon-container flex flex-col justify-center items-center bg-secondary"
+                >
                   <a
                     class="contact-item-anchor"
                     target="_blank"
                     href="https://www.linkedin.com/in/mh-imam/"
-                    ><i class="fa-brands fa-linkedin co-icon"></i
+                    ><i class="fa-brands fa-linkedin text-white text-2xl"></i
                   ></a>
                 </div>
-                <div class="contact-label">
-                  <p class="contact-label-name">Linkedin</p>
-                  <p class="contact-description">Muhammad Imam Hidayat</p>
+                <div class="contact-label flex flex-col">
+                  <p
+                    class="contact-label-name font-roboto text-third-color font-semibold text-2xl"
+                  >
+                    Linkedin
+                  </p>
+                  <p class="contact-description font-roboto text-white text-lg">
+                    Muhammad Imam Hidayat
+                  </p>
                 </div>
               </div>
-              <div class="contact">
-                <div class="contact-icon-container">
+              <div class="contact flex flex-row">
+                <div
+                  class="contact-icon-container flex flex-col justify-center items-center bg-secondary"
+                >
                   <a
                     class="contact-item-anchor"
                     target="_blank"
                     href="mailto:imamhidayat24@gmail.com"
-                    ><i class="fa-solid fa-envelope co-icon"></i
+                    ><i class="fa-solid fa-envelope text-white text-2xl"></i
                   ></a>
                 </div>
-                <div class="contact-label">
-                  <p class="contact-label-name">Email</p>
-                  <p class="contact-description">imamhidayat24@gmail.com</p>
+                <div class="contact-label flex flex-col">
+                  <p
+                    class="contact-label-name font-roboto text-third-color font-semibold text-2xl"
+                  >
+                    Email
+                  </p>
+                  <p class="contact-description font-roboto text-white text-lg">
+                    imamhidayat24@gmail.com
+                  </p>
                 </div>
               </div>
             </div>
@@ -310,9 +400,11 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="bg-secondary flex flex-col justify-center items-center">
       <div class="footer-container">
-        <p class="justify">&copy; 2023 Muhammad Imam Hidayat</p>
+        <p class="text-justify font-roboto text-white text-lg">
+          &copy; 2023 Muhammad Imam Hidayat
+        </p>
       </div>
     </footer>
 
